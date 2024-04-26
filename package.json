@@ -8,7 +8,6 @@
     "start": "ndoe server.js"
   },
   "keywords": [],
-  "type": "module",
   "author": "Akshat Mittal",
   "license": "MIT",
   "dependencies": {
