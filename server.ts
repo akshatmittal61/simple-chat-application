@@ -9,4 +9,3 @@ app.get("/api/health", (_, res) => {
 app.listen(4000, () => {
 	console.info(`Server is listening on http://localhost:4000`);
 });
-g

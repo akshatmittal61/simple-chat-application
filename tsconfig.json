@@ -1,17 +1,29 @@
 {
 	"compilerOptions": {
 		"incremental": true,
-		"target": "es2016",
-		"module": "commonjs",
+		"target": "es5",
+		"lib": ["dom", "dom.iterable", "esnext"],
 		"resolveJsonModule": true,
 		"allowJs": true,
 		"isolatedModules": true,
 		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
 		"strict": true,
+		"noFallthroughCasesInSwitch": true,
+		"moduleResolution": "node",
+		"noEmit": true,
+		"jsx": "react-jsx",
 		"noImplicitAny": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./src/*"],
+			"@/*": ["./*"]
+		},
 		"skipLibCheck": true
-	}
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
 }
